@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="text-center">
+                <h1>Welcome home</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="container text-center">
+                <button id="select1" type="button" class="btn btn-default" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-home" style="color:darkgreen" aria-hidden="true"></span>&nbsp; Living 1
+                </button>
+                <button id="select2" type="button" class="btn btn-default" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-home" style="color:darkgreen" aria-hidden="true"></span>&nbsp; Living 2
+                </button>
+                <button id="select3" type="button" class="btn btn-default" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-globe" style="color:dodgerblue" aria-hidden="true"></span>&nbsp; Desk
+                </button>
+
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="container text-center">
+                <button id="btton" type="button" class="btn btn-default" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-off" style="color:lawngreen" aria-hidden="true"></span>&nbsp; Light On
+                </button>
+                <button id="bttoff" type="button" class="btn btn-default" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-off" style="color:darkred" aria-hidden="true"></span>&nbsp; Light Off
+                </button>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="container text-center">
+                <button id="bttdim" type="button" class="btn btn-default" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-minus" style="color:lawngreen" aria-hidden="true"></span>&nbsp; Dimmer
+                </button>
+                <button id="bttbright" type="button" class="btn btn-default" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-plus" style="color:darkred" aria-hidden="true"></span>&nbsp; Brighter
+                </button>
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="container text-center">
+                <button id="bttdis" type="button" class="btn btn-default" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-cd" style="color:hotpink" aria-hidden="true"></span>&nbsp; Disco
+                </button>
+                <button id="bttwarm" type="button" class="btn btn-default" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-certificate" style="color:yellowgreen" aria-hidden="true"></span>&nbsp; Warm light
+                </button>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="container col-md-4 col-md-offset-4">
+            <div class="col-xs-4">
+                <button onclick = "changecolor(this)" type="button" class="btn btn-default" aria-label="Left Align" style="background-color:#EE82EE">Violet</button>
+            </div>
+            <div class="col-xs-4">
+                <button onclick = "changecolor(this)" type="button" class="btn btn-default" aria-label="Left Align" style="background-color:#4169E1">RoyalBlue</button>
+            </div>
+            <div class="col-xs-4">
+                <button onclick = "changecolor(this)" type="button" class="btn btn-default" aria-label="Left Align" style="background-color:#87CEFA">LightSkyBlue</button>
+            </div>
+            <div class="col-xs-4">
+                <button onclick = "changecolor(this)" type="button" class="btn btn-default" aria-label="Left Align" style="background-color:#00FFFF">Aqua</button>
+            </div>
+            <div class="col-xs-4">
+                <button onclick = "changecolor(this)" type="button" class="btn btn-default" aria-label="Left Align" style="background-color:#7FFFD4">AquaMarine</button>
+            </div>
+            <div class="col-xs-4">
+                <button onclick = "changecolor(this)" type="button" class="btn btn-default" aria-label="Left Align" style="background-color:#2E8B57">SeaGreen</button>
+            </div>
+            <div class="col-xs-4">
+                <button onclick = "changecolor(this)" type="button" class="btn btn-default" aria-label="Left Align" style="background-color:#008000">Green</button>
+            </div>
+            <div class="col-xs-4">
+                <button onclick = "changecolor(this)" type="button" class="btn btn-default" aria-label="Left Align" style="background-color:#32CD32">LimeGreen</button>
+            </div>
+            <div class="col-xs-4">
+                <button onclick = "changecolor(this)" type="button" class="btn btn-default" aria-label="Left Align" style="background-color:#FFFF00">Yellow</button>
+            </div>
+            <div class="col-xs-4">
+                <button onclick = "changecolor(this)" type="button" class="btn btn-default" aria-label="Left Align" style="background-color:#DAA520">Goldenrod</button>
+            </div>
+            <div class="col-xs-4">
+                <button onclick = "changecolor(this)" type="button" class="btn btn-default" aria-label="Left Align" style="background-color:#FFA500">Orange</button>
+            </div>
+            <div class="col-xs-4">
+                <button onclick = "changecolor(this)" type="button" class="btn btn-default" aria-label="Left Align" style="background-color:#FF0000">Red</button>
+            </div>
+            <div class="col-xs-4">
+                <button onclick = "changecolor(this)" type="button" class="btn btn-default" aria-label="Left Align" style="background-color:#FFC0CB">Pink</button>
+            </div>
+            <div class="col-xs-4">
+                <button onclick = "changecolor(this)" type="button" class="btn btn-default" aria-label="Left Align" style="background-color:#FF00FF">Fuchsia</button>
+            </div>
+            <div class="col-xs-4">
+                <button onclick = "changecolor(this)" type="button" class="btn btn-default" aria-label="Left Align" style="background-color:#DA70D6">Orchid</button>
+            </div>
+            <div class="col-xs-4">
+                <button onclick = "changecolor(this)" type="button" class="btn btn-default" aria-label="Left Align" style="background-color:#E6E6FA">Lavender</button>
+            </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="static/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
